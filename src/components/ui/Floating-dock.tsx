@@ -84,7 +84,8 @@ const FloatingDockDesktop = ({
 
   return (
     (
-      <footer className="h-20 fixed flex items-end justify-center w-full bg-gradient-to-t from-transparent/30 from-10% via-transparent via-90% to-transparent to-100% bottom-0">
+      <footer className="h-20 fixed flex items-end justify-center w-full bottom-0"> 
+      {/* aca va lo borroso */}
         
         <motion.div
           onMouseMove={(e) => mouseX.set(e.pageX)}

@@ -24,10 +24,21 @@ export default {
 
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-      }
+      },
+
+      backgroundImage: {
+        'custom-grid': `
+          linear-gradient(0deg, transparent 24%, var(--color, #E1E1E1) 25%, var(--color, #E1E1E1) 26%, transparent 27%, transparent 74%, var(--color, #E1E1E1) 75%, var(--color, #E1E1E1) 76%, transparent 77%, transparent),
+          linear-gradient(90deg, transparent 24%, var(--color, #E1E1E1) 25%, var(--color, #E1E1E1) 26%, transparent 27%, transparent 74%, var(--color, #E1E1E1) 75%, var(--color, #E1E1E1) 76%, transparent 77%, transparent)
+        `,
+      },
+      backgroundSize: {
+        'custom-grid': '55px 55px',
+      },
 
     },
   },
+
   plugins: [],
 }
 

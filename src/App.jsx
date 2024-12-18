@@ -171,9 +171,7 @@ function App() {
   ];
 
   return (
-    <div className="bg-slate-200 flex items-center justify-center w-full relative dark:bg-zinc-900">
-
-
+    <div className="bg-slate-200 flex items-center justify-center w-full dark:bg-zinc-900">
       <BrowserRouter>
         <Routes>
           <Route path='/home' element={<Home items={programingLanguages} />} />
