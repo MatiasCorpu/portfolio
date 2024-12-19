@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { IconBrandGithub, IconWorldWww, IconChevronDown } from "@tabler/icons-react";
 
-import Card from "./Card";
+import Card from "./Card-3d";
 
 function CardProject({ classNameAditional, image, altImage, title, backgroundTitle, idLanguages, description, urlPage, urlGithub, items }) {
 

@@ -3,7 +3,7 @@ import { FloatingDock } from './components/ui/Floating-dock';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import University from './pages/University';
+import  University  from './pages/University';
 import CurriculumVitae from './pages/CurriculumVitae';
 
 import {
@@ -18,7 +18,7 @@ import {
 } from "@tabler/icons-react";
 
 function App() {
-
+  
   const theme = () => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
