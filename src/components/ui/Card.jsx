@@ -2,8 +2,8 @@ import React from "react";
 
 function Card({ classNameAditional, title}) {
     return (
-        <div className={`h-full text-sm px-2 font-bold text-center text-slate-300 ${classNameAditional}`}>
-            <h1 className="h-full"> {title} </h1>
+        <div className={`text-xs text-center text-white drop-shadow-md max-w-20 rounded-l-lg flex items-center ${classNameAditional}`}>
+            <h1 className="p-1"> {title} </h1>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { IconBrandGithub, IconWorldWww, IconChevronDown } from "@tabler/icons-react";
 
-import Card from "./Card-3d";
+import Card3d from "./Card-3d";
 
 function CardProject({ classNameAditional, image, altImage, title, backgroundTitle, idLanguages, description, urlPage, urlGithub, items }) {
 
@@ -13,13 +13,12 @@ function CardProject({ classNameAditional, image, altImage, title, backgroundTit
   }
 
   return (
-    <Card classNameAditional={"ml-2 font-mono text-slate-700 dark:text-zinc-200"} clickStileActive={"false"}>
+    <Card3d classNameAditional={"ml-2 font-mono text-slate-700 dark:text-zinc-200"} clickAnimation={"false"}>
 
       <div>
         <div className="relative w-full">
           <div className={`absolute flex justify-between items-center w-full z-5 text-sm font-semibold py-2 px-3 ${backgroundTitle === "dark" ? "text-zinc-300" : "text-slate-700"}`}>
             <h1>{title}</h1>
-
             <div className="flex gap-3">
               {
                 idLanguages.map((language) => (
@@ -55,21 +54,21 @@ function CardProject({ classNameAditional, image, altImage, title, backgroundTit
         </button>
 
         <div className="flex w-full pb-1 h-14">
-          <Card classNameAditional={"w-1/2"} >
+          <Card3d classNameAditional={"w-1/2"} >
             <a className="flex justify-center items-center w-full h-full" href={urlGithub} target="_blank" rel="noreferrer">
               <IconBrandGithub />
             </a>
-          </Card>
+          </Card3d>
 
-          <Card classNameAditional={"w-1/2"} >
+          <Card3d classNameAditional={"w-1/2"} >
             <a className="flex justify-center items-center w-full h-full" href={urlPage} target="_blank" rel="noreferrer">
               <IconWorldWww />
             </a>
-          </Card>
+          </Card3d>
         </div>
       </div>
 
-    </Card>
+    </Card3d>
   );
 }
 
