@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { ButtonAnimatedModal } from "../components/ui/Button-animated-modal";
 import Card3d from "../components/ui/Card-3d";
+import ExpandableContainer from "../components/ui/ExpandableContainer";
 import Card from "../components/ui/Card";
+
 
 function University({ items }) {
 
@@ -46,14 +48,14 @@ function University({ items }) {
 
       </div>
 
-      <div className="fixed right-0 flex flex-col gap-2 m-auto items-center">
+      <ExpandableContainer>
         <Card classNameAditional={"bg-green-500"} title={"Ciencias Básicas"} />
         <Card classNameAditional={"bg-blue-500"} title={"Programación"} />
         <Card classNameAditional={"bg-gray-500"} title={"Infraestructura"} />
         <Card classNameAditional={"bg-blue-700"} title={"Desarrollo de SW"} />
         <Card classNameAditional={"bg-orange-500"} title={"Calidad y Seguridad de la Información"} />
         <Card classNameAditional={"bg-violet-500"} title={"Gestión y Complementarias"} />
-      </div>
+      </ExpandableContainer>
 
     </div>
   );
@@ -61,3 +63,9 @@ function University({ items }) {
 
 
 export default University;
+
+{/* <Card classNameAditional={"bg-blue-500"} title={"Programación"} />
+<Card classNameAditional={"bg-gray-500"} title={"Infraestructura"} />
+<Card classNameAditional={"bg-blue-700"} title={"Desarrollo de SW"} />
+<Card classNameAditional={"bg-orange-500"} title={"Calidad y Seguridad de la Información"} />
+<Card classNameAditional={"bg-violet-500"} title={"Gestión y Complementarias"} /> */}
