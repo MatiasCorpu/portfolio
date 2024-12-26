@@ -14,7 +14,7 @@ import { IconExternalLink } from '@tabler/icons-react';
 export function ButtonAnimatedModal({ id, title, description, href, status, type }) {
 
   const typeColor = {
-    "Ciencias Básicas": "bg-red-900", //
+    "Ciencias Básicas": "bg-red-900",
     "Programación": "bg-indigo-500",
     "Infraestructura": "bg-amber-700",
     "Desarrollo de SW": "bg-teal-700",
@@ -22,7 +22,6 @@ export function ButtonAnimatedModal({ id, title, description, href, status, type
     "Gestión y Complementarias": "bg-violet-500",
     "Transversal": "bg-lime-700",
   };
-
 
   return (
     <Modal>
