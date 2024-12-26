@@ -13,7 +13,7 @@ function ExpandableContainer({ children }) {
       <div className="bg-slate-200 shadow-md shadow-slate-500 dark:shadow-zinc-950 dark:bg-zinc-900 ">
         {expanded && (
           <motion.div
-            className="flex justify-center items-center w-full gap-4 py-5 mx-1 max-xl:gap-2"
+            className="flex justify-center items-center w-full gap-4 py-5 mx-1 max-xl:gap-2 max-sm:gap-1"
             initial={{
               opacity: 0,
               scale: 0.8,
@@ -42,10 +42,10 @@ function ExpandableContainer({ children }) {
 
       
       <motion.button
-        className={`bg-slate-200 border-b border-slate-400 shadow-md shadow-slate-600 p-2 ml-auto rounded-bl-2xl text-slate-500 dark:bg-zinc-900 dark:text-zinc-200 dark:border-zinc-950 dark:shadow-zinc-950/60`}
+        className={`bg-slate-200 border-b border-slate-400 shadow-md shadow-slate-600 p-1 ml-auto rounded-bl-2xl text-slate-500 dark:bg-zinc-900 dark:text-zinc-200 dark:border-zinc-950 dark:shadow-zinc-950/60`}
         onClick={() => setExpanded(!expanded)}>
 
-        <IconChevronDown className={`m-2 flex justify-center items-center active:rotate-180 transition-all ease-in duration-200  ${expanded ? "rotate-180": ""}`} />
+        <IconChevronDown className={`m-2 max-sm:m-1 max-sm:p-1 flex justify-center items-center active:rotate-180 transition-all ease-in duration-200  ${expanded ? "rotate-180": ""}`} />
       </motion.button>
 
     </div>

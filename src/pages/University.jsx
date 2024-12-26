@@ -31,18 +31,18 @@ function University({ items }) {
             <div className="flex items-center">
 
               <div className="flex justify-center items-center w-16 mr-2 animation-appear  max-xl:hidden">
-                <img src="src\assets\orejaverde.svg" className="" alt="" />
+                <img src="src\assets\orejaverde.svg" alt="" />
               </div>
 
-              <Card3d classNameAditional={"w-full h-full"} paddingContent={"p-10"} hoverScaleAnimation={"false"} clickAnimation={"false"}>
+              <Card3d classNameAditional={"w-full h-full"} paddingContent={"p-10 max-sm:p-5"} hoverScaleAnimation={"false"} clickAnimation={"false"}>
 
-              <div className="h-full w-full flex max-lg:flex-col max-lg:gap-9">
+              <div className="h-full w-full flex max-lg:flex-col max-lg:gap-9 max-sm:gap-4">
                 <div className="flex items-center text-slate-400 dark:text-zinc-700">
                   <div className="flex justify-center items-center p-5 mr-10">
                     {year > 0 ? (
                       <>
-                        <h1 className="text-9xl font-bold">{year}</h1>
-                        <h2 className="flex text-2xl font-bold justify-center items-center -rotate-90 max-lg:rotate-0 max-lg:text-7xl max-lg:ml-3">Año</h2>
+                        <h1 className="text-9xl font-bold max-sm:text-5xl">{year}</h1>
+                        <h2 className="flex text-2xl font-bold justify-center items-center -rotate-90 max-lg:rotate-0 max-lg:text-7xl max-lg:ml-3 max-sm:text-3xl">Año</h2>
                       </>
                     ) : (
                       <>
@@ -72,7 +72,7 @@ function University({ items }) {
           ))}
         </div>
 
-        <ExpandableContainer classNameAditional={"mx-10"}>
+        <ExpandableContainer classNameAditional={"mx-10 max-sm:mx-1"}>
           <Card classNameAditional={"bg-green-500"} title={"Ciencias Básicas"} />
           <Card classNameAditional={"bg-blue-500"} title={"Programación"} />
           <Card classNameAditional={"bg-gray-500"} title={"Infraestructura"} />

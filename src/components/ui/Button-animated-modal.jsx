@@ -26,7 +26,7 @@ export function ButtonAnimatedModal({ id, title, description, href, status, type
   return (
     <Modal>
 
-      <ModalTrigger className={`h-36 w-36 text-white drop-shadow-md flex justify-center items-center group/modal-btn ${typeColor[type]} ${status === "pending" ? "opacity-60" : "" } `}>
+      <ModalTrigger className={`h-36 w-36 text-white drop-shadow-md flex justify-center items-center group/modal-btn max-sm:h-24 max-sm:w-24 max-sm:text-xs ${typeColor[type]} ${status === "pending" ? "opacity-60" : "" } `}>
 
         <span className="group-hover/modal-btn:translate-x-40 drop-shadow-md text-center transition duration-500 font-bold">
           {title}
