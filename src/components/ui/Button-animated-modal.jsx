@@ -14,12 +14,13 @@ import { IconExternalLink } from '@tabler/icons-react';
 export function ButtonAnimatedModal({ id, title, description, href, status, type }) {
 
   const typeColor = {
-    "Ciencias Básicas": "bg-green-500",
-    "Programación": "bg-blue-500",
-    "Infraestructura": "bg-gray-500",
-    "Desarrollo de SW": "bg-blue-700",
-    "Calidad y Seguridad de la Información": "bg-orange-500",
+    "Ciencias Básicas": "bg-red-900", //
+    "Programación": "bg-indigo-500",
+    "Infraestructura": "bg-amber-700",
+    "Desarrollo de SW": "bg-teal-700",
+    "Calidad y Seguridad de la Información": "bg-pink-500",
     "Gestión y Complementarias": "bg-violet-500",
+    "Transversal": "bg-lime-700",
   };
 
 

@@ -484,5 +484,59 @@
     "status": "aproved",
     "type": "Desarrollo de SW",
     "year": 5
+  },
+  {
+    "id": "901",
+    "title": "Ingles I",
+    "description": "El equipo docente propone para Inglés Nivel I los siguientes propósitos: Promover un espacio de metacognición sostenida sobre los procesos de aprendizaje de los/las estudiantes que les permita reflexionar sobre el desarrollo de sus competencias en la L2. Proponer actividades variadas para que los/las estudiantes puedan lograr la autoregulación de sus propios aprendizajes. Presentar diferentes géneros textuales (de ficción y no-ficción) para que los/las estudiantes desarrollen habilidades de lecto-comprensión, audición, escritura y habla en la L2. Iniciar a las/los estudiantes en la alfabetización académica, específicamente en lo concerniente a la estructura de un abstract. Incentivar la autonomía de los/las estudiantes como usuarios de la L2 para concretar interacciones orales informales. Generar un contexto áulico apropiado para favorecer el trabajo colaborativo. Incentivar en los/las estudiantes la confianza en sus propias destrezas, estrategias y habilidades para aplicarlas en situaciones de comunicación oral en la L2.",
+    "href": "#",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
+  },
+  {
+    "id": "902",
+    "title": "Ingles II",
+    "description": "El equipo docente propone para Inglés Nivel 1: Presentar distintos tipos de géneros discursivos para analizar sus estructuras de organización. Diseñar tareas y actividades variadas que promuevan la producción de textos escritos y orales como así también el desarrollo de estrategias de lectura y comprensión auditiva. Favorecer el desarrollo de la competencia comunicativa en inglés enfatizando la utilización de elementos cohesivos para dar coherencia a los textos escritos y hablados. Incentivar la reflexión metalingüística para el beneficio de la adquisición de la lengua. Proponer tareas que contribuyan a la integración de las competencias lingüística, estratégica y cognoscitiva en el proceso de adquisición de la lengua. Promover un espacio de reflexión sobre los procesos de aprendizaje y valoración de la lengua extranjera. Generar un contexto apropiado para favorecer el trabajo colaborativo y la creatividad.",
+    "href": "#",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
+  },
+  {
+    "id": "903",
+    "title": "Ingles III",
+    "description": "Al finalizar Inglés III, los cursantes estarán en condiciones de: Leer textos significativos pertenecientes a géneros accesibles y cercanos a sus intereses. Comprender textos escritos y orales de desarrollo proposicional de complejidad accesible al nivel. Producir textos escritos y orales, en respuesta a consignas secuenciadas y que impliquen la resolución de una situación comunicativa. Reflexionar acerca de los procesos de comprensión a nivel de recepción y producción textual para detectar errores y corregirlos. Tomar conciencia de las estrategias de aprendizaje de la lengua y reflexionar sobre las propias. Valorar el aporte de conocimientos contenidos en los textos. Reconocer sus propios avances en la adquisición del código lingüístico",
+    "href": "#",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
+  },
+  {
+    "id": "904",
+    "title": "Ingles IV",
+    "description": "El propósito de Inglés IV es consolidar la competencia comunicativa oral. Para ello, la cátedra propone: Generar un ambiente que favorezca la reflexión y el trabajo colaborativo. Estimular la confianza de los estudiantes en sus estrategias y habilidades. Incentivar la autonomía de los estudiantes en la interacción oral en la lengua extranjera. Apreciar la creatividad de los estudiantes. Promover un espacio de reflexión sobre los procesos de aprendizaje y valoración de la lengua extranjera.",
+    "href": "#",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
+  },
+  {
+    "id": "911",
+    "title": "Computación I",
+    "description": "El objetivo básico de esta materia es formar al alumno y prepararlo para el alto grado de especialización y para los vertiginosos avances de la tecnología del software, lo cual requiere una materia de modalidad esencialmente práctica, que: Posibilitar la adaptación de los alumnos a los cambios tecnológicos en el campo del software. Adquirir conocimientos prácticos sobre herramientas de actualidad que posibiliten alternativas laborales. Adecuar la capacitación de la computación a los requerimientos específicos que brindan apoyo a las materias de grado. Orientar la capacitación a la utilización de los diferentes utilitarios, en un sentido creativodinámico, mediante la elaboración de trabajos prácticos integradores. Implementar, mediante la utilización de una metodología, sustentada en criterios dinámicos y flexibles. Así, el conocimiento de estas herramientas de software conforman una disciplina fundamental, que no se encuentra prevista en las materias de las carreras de grado, aportando adiestramiento y práctica, cuyas aplicaciones creativas por parte del alumno permitirán abordar tareas, tanto en el campo profesional-personal, como en el de la propia carrera. Al finalizar el Nivel I el alumno se encontrará en condiciones de operar una PC, manejar la IntraNet de la Universidad Nacional de La Matanza (para consultas, inscripciones, etc.), así como de poder realizar un documento de calidad; manejar herramientas básicas para la gestión de cálculo; realizar una presentación gráfica (a través de pantalla, cañón, retroproyector, data show, etc)",
+    "href": "https://www.unlam.edu.ar/descargas/142_ComputacionNivelI09112022.pdf",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
+  },
+  {
+    "id": "912",
+    "title": "Computación II",
+    "description": "El objetivo básico de esta materia es formar al alumno y prepararlo para el alto grado de especialización y para los vertiginosos avances de la tecnología del software, lo cual requiere una materia de modalidad esencialmente práctica, que: Posibilitar la adaptación de los alumnos a los cambios tecnológicos en el campo del software. Adquirir conocimientos prácticos sobre herramientas de actualidad que posibiliten alternativas laborales. Adecuar la capacitación de la computación a los requerimientos específicos que brindan apoyo a las materias de grado. Orientar la capacitación a la utilización de los diferentes utilitarios, en un sentido creativodinámico, mediante la elaboración de trabajos prácticos integradores. Implementar, mediante la utilización de una metodología, sustentada en criterios dinámicos y flexibles. Así, el conocimiento de estas herramientas de software conforman una disciplina fundamental, que no se encuentra prevista en las materias de las carreras de grado, aportando adiestramiento y práctica, cuyas aplicaciones creativas por parte del alumno permitirán abordar tareas, tanto en el campo profesional-personal, como en el de la propia carrera. Concluido el Nivel II de Computación Transversal, al alumno podrá navegar, realizar consultas y buscar información a través InterNet, controlar las opciones avanzadas de la edición y la publicación de material textual, así como generar páginas HTML; realizar operaciones avanzadas con información numérica, aplicando fórmulas y macros; realizar presentaciones gráficas a través de InterNet; aplicar funciones avanzadas para la administración de bases de datos y el cruce de información (interfases) entre utilitarios",
+    "href": "https://www.unlam.edu.ar/descargas/143_ProgramaCompII2022.pdf",
+    "status": "aproved",
+    "type": "Transversal",
+    "year": -1
   }
 ]
