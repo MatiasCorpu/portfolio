@@ -67,7 +67,9 @@ export const ModalBody = ({
   useOutsideClick(modalRef, () => setOpen(false));
 
   return (
-    (<AnimatePresence>
+    // (
+    // <AnimatePresence>
+    <>
       {open && (
         <motion.div
           initial={{
@@ -102,24 +104,23 @@ export const ModalBody = ({
               rotateX: 0,
               y: 0,
             }}
-            exit={{
-              opacity: 0,
-              scale: 0.8,
-              rotateX: 10,
-            }}
             transition={{
               type: "spring",
               stiffness: 260,
               damping: 15,
-            }}>
+            }}
+          >
             <CloseIcon />
             {children}
           </motion.div>
         </motion.div>
       )}
-    </AnimatePresence>)
+      {/* </AnimatePresence>
+    ) */}
+    </>
   );
-};
+}
+  ;
 
 export const ModalContent = ({
   children,

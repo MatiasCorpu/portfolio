@@ -13,7 +13,7 @@ function ExpandableContainer({ children }) {
       <div className="bg-slate-200 shadow-md shadow-slate-500 dark:shadow-zinc-950 dark:bg-zinc-900 ">
         {expanded && (
           <motion.div
-            className="flex justify-center items-center w-full gap-4 py-5"
+            className="flex justify-center items-center w-full gap-4 py-5 mx-1 max-xl:gap-2"
             initial={{
               opacity: 0,
               scale: 0.8,

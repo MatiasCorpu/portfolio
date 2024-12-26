@@ -28,12 +28,12 @@ export function ButtonAnimatedModal({ id, title, description, href, status, type
 
       <ModalTrigger className={`h-36 w-36 text-white drop-shadow-md flex justify-center items-center group/modal-btn ${typeColor[type]} ${status === "pending" ? "opacity-60" : "" } `}>
 
-        <span className="group-hover/modal-btn:translate-x-40 drop-shadow-md text-center transition duration-500">
+        <span className="group-hover/modal-btn:translate-x-40 drop-shadow-md text-center transition duration-500 font-bold">
           {title}
         </span>
 
         <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-          ✈️
+          <h1 className="font-bold">Descripción 📄</h1>
         </div>
 
       </ModalTrigger>

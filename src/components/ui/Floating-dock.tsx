@@ -4,7 +4,6 @@ import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform, useAnimation, keyframes } from "framer-motion";
 import { Link } from "react-router-dom";
-import { div, footer } from "framer-motion/client";
 
 let prevButton: HTMLElement | null = null;
 
@@ -85,7 +84,6 @@ const FloatingDockDesktop = ({
   return (
     (
       <footer className="h-20 fixed flex items-end justify-center w-full bottom-0"> 
-      {/* aca va lo borroso */}
         
         <motion.div
           onMouseMove={(e) => mouseX.set(e.pageX)}

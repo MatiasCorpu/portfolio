@@ -132,7 +132,7 @@ function App() {
 
         <FloatingDock
           items={linksNavbar}
-          mobileClassName="m-5 z-10"
+          mobileClassName="mx-3 mb-5 fixed z-10 bottom-0 right-0"
           desktopClassName="mb-5 fixed z-10 bottom-0"
         />
 
