@@ -5,7 +5,7 @@ import BlurGradient from "../components/ui/Blur-gradient";
 function Projects({ items }) {
   return (
     <>
-      <div className="w-10/12 webkit-scrollbar-thumb-red-500 webkit-scrollbar-track-red-500 max-xl:w-full">
+      <div className="w-full webkit-scrollbar-thumb-red-500 webkit-scrollbar-track-red-500">
         <div className="grid grid-cols-2 grid-rows-1 w-full pr-2 mt-2 mb-28 max-md:mb-10 max-md:grid-cols-1 max-lg:grid-cols-1 max-lg:gap-2">
 
           <div className="flex flex-col gap-2 ">
