@@ -10,10 +10,10 @@ function ExpandableContainer({ children }) {
   return (
     <div className="fixed w-full flex flex-col">
       
-      <div className="bg-slate-200 shadow-md shadow-slate-500 dark:shadow-zinc-950 dark:bg-zinc-900 ">
+      <div className="bg-slate-200 shadow-md shadow-slate-500 dark:shadow-zinc-950 dark:bg-zinc-900">
         {expanded && (
           <motion.div
-            className="flex justify-center items-center w-full gap-4 py-5 mx-1 max-xl:gap-2 max-sm:gap-1"
+            className="flex flex-wrap justify-center items-center w-full gap-4 py-5 max-xl:gap-2 max-sm:gap-1"
             initial={{
               opacity: 0,
               scale: 0.8,
