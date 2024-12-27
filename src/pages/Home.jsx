@@ -8,7 +8,7 @@ function Home({ items }) {
 
             <div className="w-full h-full justify-center items-center flex  text-slate-700 font-mono font-bold dark:text-zinc-200 max-lg:w-full">
 
-                <div className="grid grid-cols-3 grid-rows-3 gap-7 w-[95%] h-[90%] max-lg:gap-2 max-lg:w-[98%] max-lg:h-[98%]">
+                <div className="grid grid-cols-3 grid-rows-3 gap-7 w-[95%] h-[90%] max-lg:gap-2 max-lg:w-[98%] max-lg:h-[98%] w-">
 
                     <Card3d classNameAditional={"col-span-1 row-span-3"} paddingContent={"p-5"} clickAnimation={"false"}  >
                         <div className="h-full flex flex-col space-y-10 justify-center">
