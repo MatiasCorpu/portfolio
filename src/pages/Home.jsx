@@ -16,9 +16,9 @@ function Home({ items }) {
                                 <img src="src\assets\redondo.svg" alt="" className="flex w-full h-full object-cover" />
                             </div>
                             <div>
-                                <h2 className="text-3xl py-5" >Soy Matías.</h2>
+                                <h2 className="text-3xl py-5" >Lorem ipsum dolor.</h2>
                                 <p className="font-thin text-base text-slate-500  dark:text-zinc-400">
-                                    Soy estudiante de Ingeniería en Informática, actualmente cursando el segundo año de la carrera. Aunque todavía no tengo experiencia en el sector, estoy comprometido con mi formación y apasionado por la tecnología y el desarrollo de soluciones innovadoras.
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, neque iste aliquid maxime ipsam nulla consequatur odit voluptatibus cumque excepturi voluptatum quae tempore corrupti amet dolorem sit, doloribus temporibus dolor.
                                 </p>
                             </div>
                         </div>
@@ -26,12 +26,12 @@ function Home({ items }) {
                     </Card3d>
 
                     <Card3d classNameAditional={"col-span-2 row-span-1"} paddingContent={"py-5 px-7"} clickAnimation={"false"}>
-                        <h1 className="text-4xl flex items-center">Estudiante de Ingeniería en Informática.</h1>
+                        <h1 className="text-4xl flex items-center">Lorem ipsum dolor sit amet consectetur</h1>
                     </Card3d>
 
                     <Card3d classNameAditional={"col-span-2 row-span-2"} paddingContent={"p-5"} clickAnimation={"false"}>
                         <div className="flex flex-col h-full w-full">
-                            <h3 className="text-2xl">Conocimientos Técnicos.</h3>
+                            <h3 className="text-2xl">Lorem consectetur adipisicing</h3>
                             <div className="flex w-full h-full justify-center items-center">
                                 <div className="grid grid-cols-5 grid-rows-2 gap-7">
                                     {
