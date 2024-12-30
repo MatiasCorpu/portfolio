@@ -1,15 +1,27 @@
-import React from "react";
-import { IconBrandGithub, IconWorldWww, IconChevronDown } from "@tabler/icons-react";
+import { React, useState } from "react";
+import { IconBrandGithub, IconWorldWww, IconFileDescription } from "@tabler/icons-react";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 import Card3d from "./Card-3d";
 
 function CardProject({ classNameAditional, image, altImage, title, backgroundTitle, idLanguages, description, urlPage, urlGithub, items }) {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsVisible(!isVisible);
+  };
+
+
   return (
     <Card3d classNameAditional={"ml-2 text-sm font-mono text-slate-700 dark:text-zinc-200"} clickAnimation={"false"}>
 
       <div className="w-full">
         <div className="relative w-full">
-          <div className={`absolute flex z-30 justify-between items-center w-full z-5 font-semibold py-2 px-3 ${backgroundTitle === "dark" ? "text-zinc-300" : "text-slate-700"}`}>
+          <div className={`absolute flex z-10 justify-between items-center w-full z-5 font-semibold py-2 px-3 ${(backgroundTitle === "dark" && !isVisible) ? "text-zinc-300" : ""}
+          ${(backgroundTitle !== "dark" && !isVisible) ? "text-slate-700" : ""}`
+          }>
             <h1>{title}</h1>
             <div className="flex gap-3">
               {
@@ -26,16 +38,56 @@ function CardProject({ classNameAditional, image, altImage, title, backgroundTit
         </div>
 
         <div className="relative overflow-hidden rounded-lg w-full flex">
-          
+
           <img className="rounded-xl" src={`src/assets/${image}`} alt={altImage} />
 
-          
-          <div className="absolute bg-slate-200 dark:bg-zinc-900 w-full h-full pt-12 opacity-0 hover:opacity-100 transition-opacity duration-500 ease-in-out">
-            <div className="absolute bg-slate-200 dark:bg-zinc-900 w-full h-full overflow-y-auto opacity-100">
-              <p className="w-full flex items-center px-7 pb-7">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, iusto ullam earum nam rem quis velit atque labore laboriosam inventore debitis placeat perspiciatis ut sint, mollitia dolor molestiae exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, unde incidunt perspiciatis at iure consectetur numquam. Labore, modi minus dolor cupiditate magnam libero maxime eum vel ullam tempora itaque accusantium! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nihil aliquam asperiores optio sed at omnis? Dignissimos ad quis repellat voluptatibus aliquid tempore recusandae ipsam nihil sunt corporis? Magnam, rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente recusandae reprehenderit, fugiat alias explicabo minus optio dignissimos obcaecati labore quasi perspiciatis? Veniam magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae, iusto ullam earum nam rem quis v </p>
-            </div>
-          </div>
+          <AnimatePresence>
+            {isVisible &&
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  scale: 0.5,
+                  x: 400,
+                  y: 300,
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                  x: 0,
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0.5,
+                  x: 400,
+                  y: 300,
+                }}
+                transition={{
+                  type: "tween",
+                  duration: 0.2,
+                }}
+
+                className="w-full h-full flex absolute bg-slate-200 pt-12 pl-3 dark:bg-zinc-900 pr-14">
+
+                <div className="w-full h-full overflow-y-auto">
+                  <p className="text-sm  text-zinc-600 dark:text-slate-300">
+                    {description}
+                  </p>
+                </div>
+
+              </motion.div>
+            }
+          </AnimatePresence>
+
+          <Card3d classNameAditional={"w-1/2 absolute bottom-0 right-0 m-1 w-max h-max"}
+            onClick={() => console.log("click")}>
+            <button
+              className="p-2 flex justify-center items-center w-full h-full"
+              onClick={handleButtonClick}
+            >
+              <IconFileDescription className="w-5" />
+            </button>
+          </Card3d>
         </div>
 
         <div className="flex w-full pb-1 mt-2 h-14">
