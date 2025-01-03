@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Card3d from "./Card-3d";
 
-function CardProject({ classNameAditional, image, altImage, title, backgroundTitle, idLanguages, description, urlPage, urlGithub, items }) {
+function CardProject({ image, altImage, title, backgroundTitle, idLanguages, description, urlPage, urlGithub, items }) {
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -91,17 +91,19 @@ function CardProject({ classNameAditional, image, altImage, title, backgroundTit
         </div>
 
         <div className="flex w-full pb-1 mt-2 h-14">
-          <Card3d classNameAditional={"w-1/2"} >
+          <Card3d classNameAditional={"w-full"} >
             <a className="flex justify-center items-center w-full h-full" href={urlGithub} target="_blank" rel="noreferrer">
               <IconBrandGithub />
             </a>
           </Card3d>
-
-          <Card3d classNameAditional={"w-1/2"} >
+          
+          {urlPage ? 
+          <Card3d classNameAditional={"w-full"} >
             <a className="flex justify-center items-center w-full h-full" href={urlPage} target="_blank" rel="noreferrer">
               <IconWorldWww />
             </a>
           </Card3d>
+          : null}
         </div>
       </div>
 

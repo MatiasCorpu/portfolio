@@ -10,20 +10,18 @@ function Projects({ items }) {
 
           <div className="flex flex-col gap-2 ">
             <CardProject
-              classNameAditional={""}
               image={"redondo.svg"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
               backgroundTitle={"dark"}
               idLanguages={["javascript", "react", "tailwind", "html", "css"]}
               description={"Descripción del proyecto 1, aldskjfalk sdhnfkajb nvinerav, nads fna,sdnfñlasdkjf lkajsdfñlkas jdfñlkasdj fñainv kjng,mndvck jerg vkand sofñ ijhsfl kajdsofiñ jasklfdnoi rvklsdfnv ilsdhgf"}
-              urlPage={"#"}
+              // urlPage={"#"}
               urlGithub={"#"}
               items={items}
             />
 
             <CardProject
-              classNameAditional={""}
               image={"redondo.svg"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
@@ -39,7 +37,6 @@ function Projects({ items }) {
 
           <div className="flex flex-col gap-2">
             <CardProject
-              classNameAditional={""}
               image={"redondo.svg"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
@@ -56,7 +53,7 @@ function Projects({ items }) {
         </div>
 
       </div>
-      <BlurGradient className={"max-md:hidden"} />
+      <BlurGradient />
     </>
   );
 }

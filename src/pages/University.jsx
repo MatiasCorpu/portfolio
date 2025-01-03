@@ -84,7 +84,7 @@ function University({ items }) {
         </ExpandableContainer>
 
       </div>
-      <BlurGradient className={"max-md:hidden"} />
+      <BlurGradient />
     </>
   );
 };
