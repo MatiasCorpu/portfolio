@@ -132,8 +132,8 @@ function App() {
 
         <FloatingDock
           items={linksNavbar}
-          mobileClassName="mx-3 mb-5 fixed bottom-0 right-0"
-          desktopClassName="mb-5 fixed bottom-0"
+          // mobileClassName="mx-3 mb-5 fixed bottom-0 right-0"
+          desktopClassName="mb-5 max-sm:mb-2 fixed bottom-0"
         />
 
       </BrowserRouter>

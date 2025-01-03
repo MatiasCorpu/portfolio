@@ -14,13 +14,13 @@ import { IconExternalLink } from '@tabler/icons-react';
 export function ButtonAnimatedModal({ id, title, description, href, status, type }) {
 
   const typeColor = {
-    "Ciencias Básicas": "bg-red-900",
-    "Programación": "bg-indigo-500",
-    "Infraestructura": "bg-amber-700",
-    "Desarrollo de SW": "bg-teal-700",
-    "Calidad y Seguridad de la Información": "bg-pink-500",
-    "Gestión y Complementarias": "bg-violet-500",
-    "Transversal": "bg-lime-700",
+    "Ciencias Básicas": "bg-[#498379]",
+    "Programación": "bg-[#c5be8b]",
+    "Infraestructura": "bg-[#c5ad4b]",
+    "Desarrollo de SW": "bg-[#eac388]",
+    "Calidad y Seguridad de la Información": "bg-[#a2a384]",
+    "Gestión y Complementarias": "bg-[#dd423e]",
+    "Transversal": "bg-[#3f2c26]",
   };
 
   return (
@@ -37,7 +37,6 @@ export function ButtonAnimatedModal({ id, title, description, href, status, type
         </div>
 
       </ModalTrigger>
-
 
       <ModalBody className={"bg-slate-200 dark:bg-zinc-900 text-slate-700 dark:text-zinc-200 border-transparent dark:border-neutral-800"}>
 

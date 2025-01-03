@@ -23,7 +23,7 @@ function University({ items }) {
           <span className="w-[4px] ml-auto flex h-[100%] items-center m-auto bg-gradient-to-b from-transparent from-[2%] via-[#2EA043] to-transparent"></span>
         </div>
 
-        <div className="flex w-10/12 flex-col justify-center gap-4 mb-28 mt max-md:mb-4 max-md:w-full max-md:mx-2">
+        <div className="flex w-10/12 flex-col justify-center gap-4 mb-28 mt max-md:w-full max-md:mx-2">
           <h1 className="text-3xl font-bold ml-20 mt-6 mb-2 text-slate-600 dark:text-zinc-300 max-xl:ml-2 max-sm:text-2xl">University</h1>
 
           {Object.keys(groupedItems).map((year) => (

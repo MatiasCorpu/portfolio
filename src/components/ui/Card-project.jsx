@@ -39,7 +39,7 @@ function CardProject({ classNameAditional, image, altImage, title, backgroundTit
 
         <div className="relative overflow-hidden rounded-lg w-full flex">
 
-          <img className="rounded-xl" src={`src/assets/${image}`} alt={altImage} />
+          <img className="rounded-xl w-full" src={`src/assets/${image}`} alt={altImage} />
 
           <AnimatePresence>
             {isVisible &&

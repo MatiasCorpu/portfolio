@@ -16,7 +16,7 @@ export const FloatingDock = ({
   return (
     <>
       <FloatingDockDesktop items={items} className={desktopClassName} />
-      <FloatingDockMobile items={items} className={mobileClassName} />
+      {/* <FloatingDockMobile items={items} className={mobileClassName} /> */}
     </>
   );
 };
@@ -55,8 +55,8 @@ const FloatingDockMobile = ({
                     <Link
                       to={item.href}
                       key={item.title}
-                      className="h-10 w-10 rounded-full bg-slate-50 border border-slate-300 flex items-center justify-center dark:bg-slate-700 dark:border-slate-900">
-                      <div className="h-4 w-4">{item.icon}</div>
+                      className="h-12 w-14 rounded-full bg-slate-50 border-2 border-slate-500 flex items-center justify-center dark:bg-slate-500 dark:border-slate-900 ">
+                      <div className="h-full w-full p-3">{item.icon}</div>
                     </Link>
                   </motion.div>
                 ))}
@@ -68,8 +68,8 @@ const FloatingDockMobile = ({
 
         <button
           onClick={() => setOpen(!open)}
-          className="h-10 w-10 rounded-full bg-slate-200 border border-slate-300 flex items-center justify-center dark:bg-slate-800 dark:border-slate-900">
-          <IconLayoutNavbarCollapse className="text-slate-500 dark:text-slate-400" />
+          className="h-14 w-14 rounded-full bg-white border-2 border-slate-600 flex items-center justify-center dark:bg-slate-800 dark:border-slate-900">
+          <IconLayoutNavbarCollapse className="text-slate-600 dark:text-slate-400" />
         </button>
       </div>)
   );
@@ -89,7 +89,7 @@ const FloatingDockDesktop = ({
           onMouseMove={(e) => mouseX.set(e.pageX)}
           onMouseLeave={() => mouseX.set(Infinity)}
           className={cn(
-            "mx-auto hidden md:flex h-16 gap-4 items-end rounded-full px-3 pb-2.5 bg-slate-200  border-t border-slate-50 shadow-xl shadow-slate-600/40 dark:bg-zinc-900 dark:border-zinc-800 dark:shadow-zinc-950/40",
+            "mx-auto flex h-16 gap-4 max-sm:gap-2 items-end rounded-full px-3 pb-2.5 bg-slate-200  border-t border-slate-50 shadow-xl shadow-slate-600/40 dark:bg-zinc-900 dark:border-zinc-800 dark:shadow-zinc-950/40",
             className
           )}>
           {items.map((item) => (
@@ -191,7 +191,7 @@ function IconContainer({
 
   const handleClick = (e) => {
     controls.start({
-      y: [0, -25, 0, -10, 0],
+      y: [0, -25, 5, -10, 0],
       transition: {
         duration: 0.5,
         ease: "easeOut",
@@ -234,12 +234,18 @@ function IconContainer({
     }
   };
 
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+  }, []);
+
   return (
     (
       <Link to={href} id={id} aria-label={ariaLabel} className="rounded-full">
         <motion.div
           ref={ref}
-          style={{ width, height }}
+          style={isTouchDevice ? {} : { width, height }}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={(e) => handleClick(e)}
@@ -275,7 +281,7 @@ function IconContainer({
 
           <div id="container-toggle-theme">
             <motion.div
-              style={{ width: widthIcon, height: heightIcon }}
+              style={ isTouchDevice ? {} : {width: widthIcon, height: heightIcon}}
               className="flex items-center justify-center"
             >
               {icon}
