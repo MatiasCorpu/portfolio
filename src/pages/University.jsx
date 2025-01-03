@@ -53,7 +53,7 @@ function University({ items }) {
                     </div>
                   </div>
 
-                  <div key={year} className="w-full flex flex-wrap max-xl:justify-center gap-5 max-sm:gap-3">
+                  <div key={year} className="w-full flex items-center flex-wrap max-xl:justify-center gap-5 max-sm:gap-3">
                     {groupedItems[year].map((item) => (
                       <ButtonAnimatedModal
                         key={item.id}
@@ -75,12 +75,13 @@ function University({ items }) {
         </div>
 
         <ExpandableContainer classNameAditional={"mx-10 max-sm:mx-1 flex flex-wrap"}>
-          <Card classNameAditional={"bg-green-500"} title={"Ciencias Básicas"} />
-          <Card classNameAditional={"bg-blue-500"} title={"Programación"} />
-          <Card classNameAditional={"bg-gray-500"} title={"Infraestructura"} />
-          <Card classNameAditional={"bg-blue-700"} title={"Desarrollo de SW"} />
-          <Card classNameAditional={"bg-orange-500"} title={"Calidad y Seguridad de la Información"} />
-          <Card classNameAditional={"bg-violet-500"} title={"Gestión y Complementarias"} />
+          <Card classNameAditional={"bg-[#498379]"} title={"Ciencias Básicas"} />
+          <Card classNameAditional={"bg-[#492947]"} title={"Programación"} />
+          <Card classNameAditional={"bg-[#ba792e]"} title={"Infraestructura"} />
+          <Card classNameAditional={"bg-[#8f8f3f]"} title={"Desarrollo de SW"} />
+          <Card classNameAditional={"bg-[#a2a384]"} title={"Calidad y Seguridad de la Información"} />
+          <Card classNameAditional={"bg-[#dd423e]"} title={"Gestión y Complementarias"} />
+          <Card classNameAditional={"bg-[#9ec5d5]"} title={"Transversal"} />
         </ExpandableContainer>
 
       </div>

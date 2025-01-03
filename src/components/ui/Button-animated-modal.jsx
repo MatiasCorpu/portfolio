@@ -15,28 +15,26 @@ export function ButtonAnimatedModal({ id, title, description, href, status, type
 
   const typeColor = {
     "Ciencias Básicas": "bg-[#498379]",
-    "Programación": "bg-[#c5be8b]",
-    "Infraestructura": "bg-[#c5ad4b]",
-    "Desarrollo de SW": "bg-[#eac388]",
+    "Programación": "bg-[#492947]",
+    "Infraestructura": "bg-[#ba792e]",
+    "Desarrollo de SW": "bg-[#8f8f3f]",
     "Calidad y Seguridad de la Información": "bg-[#a2a384]",
     "Gestión y Complementarias": "bg-[#dd423e]",
-    "Transversal": "bg-[#3f2c26]",
+    "Transversal": "bg-[#9ec5d5]",
   };
 
   return (
     <Modal>
 
-      <ModalTrigger className={`h-36 w-36 text-white drop-shadow-md flex justify-center items-center group/modal-btn max-sm:h-24 max-sm:w-24 max-sm:text-xs ${typeColor[type]} ${status === "pending" ? "opacity-60" : "" } `}>
+      <ModalTrigger className={`h-36 w-36 text-white flex justify-center items-center ease-linear hover:scale-105 duration-200 max-sm:h-24 max-sm:w-24 max-sm:text-xs ${typeColor[type]} ${status === "pending" ? "opacity-60" : ""} `} >
 
-        <span className="group-hover/modal-btn:translate-x-40 drop-shadow-md text-center transition duration-500 font-bold">
+        <span className="text-center transition duration-500 font-bold">
           {title}
         </span>
 
-        <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-          <h1 className="font-bold">Descripción 📄</h1>
-        </div>
 
       </ModalTrigger>
+
 
       <ModalBody className={"bg-slate-200 dark:bg-zinc-900 text-slate-700 dark:text-zinc-200 border-transparent dark:border-neutral-800"}>
 
