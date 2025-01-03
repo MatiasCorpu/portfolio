@@ -10,7 +10,7 @@ function Projects({ items }) {
 
           <div className="flex flex-col gap-2 ">
             <CardProject
-              image={"redondo.svg"}
+              image={"77rr.gif"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
               backgroundTitle={"dark"}
@@ -22,7 +22,7 @@ function Projects({ items }) {
             />
 
             <CardProject
-              image={"redondo.svg"}
+              image={"2qQQ.gif"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
               backgroundTitle={"dark"}
@@ -37,7 +37,7 @@ function Projects({ items }) {
 
           <div className="flex flex-col gap-2">
             <CardProject
-              image={"redondo.svg"}
+              image={"1ka4.gif"}
               altImage={"Proyecto 1"}
               title={"Proyecto 1"}
               backgroundTitle={"dark"}

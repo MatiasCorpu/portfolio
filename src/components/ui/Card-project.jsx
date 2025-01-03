@@ -47,7 +47,7 @@ function CardProject({ image, altImage, title, backgroundTitle, idLanguages, des
                 initial={{
                   opacity: 0,
                   scale: 0.5,
-                  x: 400,
+                  x: 600,
                   y: 300,
                 }}
                 animate={{
@@ -59,15 +59,15 @@ function CardProject({ image, altImage, title, backgroundTitle, idLanguages, des
                 exit={{
                   opacity: 0,
                   scale: 0.5,
-                  x: 400,
+                  x: 600,
                   y: 300,
                 }}
                 transition={{
                   type: "tween",
-                  duration: 0.2,
+                  duration: 0.3,
                 }}
 
-                className="w-full h-full flex absolute bg-slate-200 pt-12 pl-3 dark:bg-zinc-900 pr-14">
+                className="w-full h-full flex absolute bg-slate-200 pt-12 pl-3 dark:bg-zinc-900 pr-14 rounded-lg">
 
                 <div className="w-full h-full overflow-y-auto">
                   <p className="text-sm  text-zinc-600 dark:text-slate-300">

@@ -254,7 +254,7 @@ function IconContainer({
           className="bg-slate-50 aspect-square rounded-full flex items-center justify-center relative  shadow-md shadow-slate-500/65 border-t border-slate-50 dark:bg-zinc-800 dark:shadow-zinc-950/60 dark:border-zinc-700">
 
           <AnimatePresence>
-            {hovered && (
+            {hovered && !isTouchDevice && (
               <motion.div
                 initial={{ opacity: 0, y: 10, x: "-50%" }}
                 animate={{
